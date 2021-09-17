@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Relative Layout"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/inpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:hint="Reminder Name"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/dates"
+        style="@style/Widget.MaterialComponents.TimePicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inpName"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/times"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@id/times"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inpName"
+        android:layout_alignParentRight="true"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/times"
+        android:layout_alignParentRight="true"
+        android:text="@string/send" />
+
+
+</RelativeLayout>

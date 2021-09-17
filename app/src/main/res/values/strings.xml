@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Views &amp; Layout Hierarchy</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="tombol">Tombol</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="constain_layout">Constain Layout</string>
+    <string name="no">0</string>
+    <string name="zero">zero</string>
+    <string name="toast">Toast</string>
+    <string name="count">Count</string>
+</resources>
