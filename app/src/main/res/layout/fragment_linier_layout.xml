@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".LinearLayoutActivity">
+    tools:context=".fragment.LinierLayoutFragment">
 
     <TextView
         android:id="@+id/textView2"
@@ -43,13 +43,14 @@
     <EditText
         android:id="@+id/inpMsg"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/message"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
 
     <LinearLayout
         android:layout_width="match_parent"

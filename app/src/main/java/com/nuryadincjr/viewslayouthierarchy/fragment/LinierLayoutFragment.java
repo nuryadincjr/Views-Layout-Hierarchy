@@ -1,30 +1,39 @@
-package com.nuryadincjr.viewslayouthierarchy;
+package com.nuryadincjr.viewslayouthierarchy.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import com.nuryadincjr.viewslayouthierarchy.databinding.ActivityLinearLayoutBinding;
+import com.nuryadincjr.viewslayouthierarchy.databinding.FragmentLinierLayoutBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LinearLayoutActivity extends AppCompatActivity {
+public class LinierLayoutFragment extends Fragment {
 
-    private ActivityLinearLayoutBinding binding;
+    private FragmentLinierLayoutBinding binding;
     private String addresses, subject, messages;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linear_layout);
+    }
 
-        binding = ActivityLinearLayoutBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        binding = FragmentLinierLayoutBinding.inflate(inflater, container, false);
+        View views = binding.getRoot();
+
 
         binding.btnSend.setOnClickListener(view -> {
             addresses = binding.inpTo.getText().toString();
@@ -33,6 +42,8 @@ public class LinearLayoutActivity extends AppCompatActivity {
 
             sendEmail(emailAddresses(), subject, messages);
         });
+
+        return views;
     }
 
     public void sendEmail(String[] addresses, String subject, String messages) {
@@ -43,8 +54,8 @@ public class LinearLayoutActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, messages);
 
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
+        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+            getContext().startActivity(intent);
         }
     }
 

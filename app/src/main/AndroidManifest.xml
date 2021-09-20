@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ViewsLayoutHierarchy">
         <activity
-            android:name=".RelativeLayoutActivity"
+            android:name=".activity.AddContactActivity"
             android:exported="true" />
         <activity
-            android:name=".ConstaintLayoutActivity"
+            android:name=".activity.RelativeLayoutActivity"
             android:exported="true" />
         <activity
-            android:name=".FrameLayoutActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LinearLayoutActivity"
+            android:name=".activity.FrameLayoutActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

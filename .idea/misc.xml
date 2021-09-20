@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/activity_add_contact.xml" value="0.18" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/activity_constaint_layout.xml" value="0.21" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/activity_frame_layout.xml" value="0.16842105263157894" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/activity_linear_layout.xml" value="0.16842105263157894" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/activity_relative_layout.xml" value="0.16842105263157894" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/activity_user_interactions.xml" value="0.16842105263157894" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/fragment_constain_layout.xml" value="0.15657894736842104" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/fragment_home.xml" value="0.16842105263157894" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/fragment_linier_layout.xml" value="0.16842105263157894" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/home_blank.xml" value="0.16842105263157894" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/layout/list_contact.xml" value="0.1" />
+        <entry key="..\:/ProjectMe/Kampus Merdeka/sesi 7/ViewsLayoutHierarchy/app/src/main/res/menu/button_navigation_menu.xml" value="0.16842105263157894" />
         <entry key="..\:/ProjectMe/ViewsLayoutHierarchy/app/src/main/res/layout/activity_constaint_layout.xml" value="0.25" />
         <entry key="..\:/ProjectMe/ViewsLayoutHierarchy/app/src/main/res/layout/activity_frame_layout.xml" value="0.22" />
         <entry key="..\:/ProjectMe/ViewsLayoutHierarchy/app/src/main/res/layout/activity_linear_layout.xml" value="0.22" />

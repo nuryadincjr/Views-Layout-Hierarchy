@@ -6,43 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnFrame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="@string/frame_layout"
+    <FrameLayout
+        android:id="@+id/contactContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuNav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnLinier"
-        android:layout_width="wrap_content"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menuNav"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/linear_layout"
-        app:layout_constraintEnd_toEndOf="@+id/btnFrame"
-        app:layout_constraintStart_toStartOf="@+id/btnFrame"
-        app:layout_constraintTop_toBottomOf="@+id/btnFrame" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/button_navigation_menu" >
 
-    <Button
-        android:id="@+id/btnRelative"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/relative_layout"
-        app:layout_constraintEnd_toEndOf="@+id/btnLinier"
-        app:layout_constraintStart_toStartOf="@+id/btnLinier"
-        app:layout_constraintTop_toBottomOf="@+id/btnLinier" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <Button
-        android:id="@+id/btnConstain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/constain_layout"
-        app:layout_constraintEnd_toEndOf="@+id/btnRelative"
-        app:layout_constraintStart_toStartOf="@+id/btnRelative"
-        app:layout_constraintTop_toBottomOf="@+id/btnRelative" />
 </androidx.constraintlayout.widget.ConstraintLayout>

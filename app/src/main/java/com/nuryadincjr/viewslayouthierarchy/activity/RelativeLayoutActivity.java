@@ -1,8 +1,10 @@
-package com.nuryadincjr.viewslayouthierarchy;
+package com.nuryadincjr.viewslayouthierarchy.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.nuryadincjr.viewslayouthierarchy.R;
 
 public class RelativeLayoutActivity extends AppCompatActivity {
 

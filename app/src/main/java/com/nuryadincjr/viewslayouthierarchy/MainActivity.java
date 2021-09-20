@@ -1,12 +1,14 @@
 package com.nuryadincjr.viewslayouthierarchy;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.nuryadincjr.viewslayouthierarchy.databinding.ActivityMainBinding;
+import com.nuryadincjr.viewslayouthierarchy.fragment.ConstainLayoutFragment;
+import com.nuryadincjr.viewslayouthierarchy.fragment.HomeFragment;
+import com.nuryadincjr.viewslayouthierarchy.fragment.LinierLayoutFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,27 +18,36 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.btnConstain.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, ConstaintLayoutActivity.class);
-            startActivity(intent);
-        });
+        getFragmentPage(new HomeFragment());
 
-        binding.btnFrame.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, FrameLayoutActivity.class);
-            startActivity(intent);
+        binding.menuNav.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.btnHome:
+                    getFragmentPage(new HomeFragment());
+                    break;
+                case R.id.btnConstain:
+                    getFragmentPage(new ConstainLayoutFragment());
+                    break;
+                case R.id.btnLinier:
+                        getFragmentPage(new LinierLayoutFragment());
+                    break;
+            }
+            return true;
         });
+    }
 
-        binding.btnLinier.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, LinearLayoutActivity.class);
-            startActivity(intent);
-        });
-
-        binding.btnRelative.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, RelativeLayoutActivity.class);
-            startActivity(intent);
-        });
+    private boolean getFragmentPage(Fragment fragment) {
+        if (fragment != null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.contactContainer, fragment)
+                    .commit();
+            return true;
+        }
+        return true;
     }
 }

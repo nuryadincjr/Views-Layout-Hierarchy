@@ -13,4 +13,27 @@
     <string name="zero">zero</string>
     <string name="toast">Toast</string>
     <string name="count">Count</string>
+    <string name="txt_no">No.</string>
+    <string name="name">Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">add</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save">Save</string>
+    <string name="nama">Nama</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="names">
+        <item>Nuryadin Abutani</item>
+        <item>Nuryadin</item>
+        <item>Abutani</item>
+        <item>Abu</item>
+    </string-array>
+
+    <string-array name="photo">
+        <item>@drawable/ic_baseline_home_24</item>
+        <item>@drawable/ic_launcher_background</item>
+        <item>@drawable/ic_baseline_add_circle_24</item>
+        <item>@drawable/ic_launcher_foreground</item>
+    </string-array>
 </resources>
